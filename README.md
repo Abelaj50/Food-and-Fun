@@ -45,9 +45,9 @@ A "long click" on any item in the grid (i.e. any animal thumbnail) within the fi
     * As soon as a user selects an item, the first fragment is “shrunk” to about 1/3 of the screen’s width. This fragment will appear in the left-hand side of the screen, with the second fragment taking up the remaining 2/3 of the display on the right. 
     * Pressing the “back” button will return the activity to its initial configuration. 
 * The action bar in Application 2 should be displayed at all times regardless of whether the device is in portrait or landscape mode.
-* The state of Applicaation 2 should be retained across device reconfigurations, e.g., when the device is switched from landscape to portrait mode and vice versa. 
+* The state of Application 2 should be retained across device reconfigurations, e.g., when the device is switched from landscape to portrait mode and vice versa. 
     * This means that the selected list item (in the first fragment) and the page displayed in the second fragment will be kept during configuration changes.
-* Using a ViewModel with LiveData for communication between fragments is required.
+* Using a ViewModel with LiveData for communication between fragments was required.
     
 ## Technologies
 Project is created with:

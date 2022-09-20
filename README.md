@@ -1,5 +1,5 @@
 # Abels-Animals
-Android application showcasing various animals and interesting facts about them along with other features, creating using the Android flavor of Java. CS 478 Project 2, UIC Spring 2022.
+Android application displaying various attractions and restaurants in the Chicago area, and separate app that sends broadcasts to launch on default the chosen category. Creating using the Android flavor of Java. CS 478 Project 3, UIC Spring 2022.
 
 ## Table of contents
 * [General Info](#general-info)
@@ -9,7 +9,21 @@ Android application showcasing various animals and interesting facts about them 
 * [Visual Demonstration](#visual-demonstration)
 
 ## General info
-This project is the second project for CS 478 (Software Development for Mobile Platforms) at the University of Illinois at Chicago, Spring 2022. Our task was to develop an Android app that displays information about wild animals. The app’s main activity displays a grid whose cells contain a thumbnail picture of an animal above the name of the animal. Each grid cell supports two kinds of functionality, depending on whether an app viewer performs a short or a long click on the cell. A short click brings up a new activity that shows an enlarged picture of the selected animal on the entire device display. The user can return to the grid view by selecting the “back” soft button on the phone. If, instead, a user clicks anywhere on the displayed picture, a third activity launches showing interesting facts about the selected animal. A long click on a grid cell of the main activity brings up a “context menu” showing the following three options for the animal under consideration: (1) View the entire picture (similar to a short click); (2) Show the interesting facts about the animal; and (3) go to the Wikipedia page for the animal.
+This project is the third project for CS 478 (Software Development for Mobile Platforms) at the University of Illinois at Chicago, Spring 2022. Our task was to design and code two new Android apps meant to work together on an Android device running version Android 11 (API 30). The first app helps visitors in Chicago decide on points of interest in the city. The second app has specific information about the points of interest. 
+
+Application 1 was required to define an activity containing two read-only text views and two buttons. The buttons, when selected, will first show a short toast message, then broadcast two different implicity intents (e.g., attractions and restaurants) depending on the button pressed. The text views describe the meaning of the buttons to the device user. Application 2 was required to receive the intents. Depending on the kind of intent that was received, 
+
+Application 2 (Food and Fun!) was required to launch one of two activities. The first activity (attractions) displays information about 5 points of interest in the city of Chicago, Illinois (e.g., the Lincoln Park Zoo, Navy Pier, the Museum of Science and Indutry, the Art Institute, the TILT!, etc.) The second activity shows at least 5 restaurants located within Chicago’s city limits. Application 2 also maintains an options menu and an action bar. The action bar shows the name of the application (your choice) and the overflow area. The options menu allows a device user to switch between attractions and restaurants. This menu should be clearly accessible from the overflow area. Each of the two activities in Application 2 contains two fragments. The first fragment displays a list (either the attractions or the restaurants, depending on the activity). This list may be scrollable, as needed. The device user may select any item from either list; the currently selected item will stay highlighted until another item is selected. The second fragment shows the official web site of the highlighted item using a Webview.
+
+### Other Requirements ###
+* Our apps were required display optimally in landscape mode. 
+* The activities in Application 2 initially show only the first fragment across the entire width of the screen. 
+    * As soon as a user selects an item, the first fragment is “shrunk” to about 1/3 of the screen’s width. This fragment will appear in the left-hand side of the screen, with the second fragment taking up the remaining 2/3 of the display on the right. 
+    * Pressing the “back” button will return the activity to its initial configuration. 
+* The action bar in Application 2 should be displayed at all times regardless of whether the device is in portrait or landscape mode.
+* The state of Applicaation 2 should be retained across device reconfigurations, e.g., when the device is switched from landscape to portrait mode and vice versa. 
+    * This means that the selected list item (in the first fragment) and the page displayed in the second fragment will be kept during configuration changes.
+* Using a ViewModel with LiveData for communication between fragments is required.
 
 ## Getting Started
 If you would like to download the app from the Google Play Store, click **here**. If you would like to browse through the source code in the environment it was created in, make sure you have **Android Studio 2021.1.1** installed.
@@ -19,7 +33,7 @@ If you would like to download the app from the Google Play Store, click **here**
 * Linux: [download here](https://redirector.gvt1.com/edgedl/android/studio/ide-zips/2021.1.1.20/android-studio-2021.1.1.20-linux.tar.gz)
 * Chrome OS: [download here](https://redirector.gvt1.com/edgedl/android/studio/install/2021.1.1.20/android-studio-2021.1.1.20-cros.deb)
 
-Once you are ready, open the project in Android Studio. Ensure that the Run/Debug Configurations are set and set the device to a Pixel 3a XL using API 30. The application should load up and look something like this:
+Once you are ready, open the project(s) in Android Studio. Ensure that the Run/Debug Configurations are set and set the device to a Pixel 3a XL using API 30. The application should load up and look something like this:
 
 ![App Start](images/app_start.png)
 

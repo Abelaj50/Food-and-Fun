@@ -30,6 +30,7 @@ and Food and Fun! should look something like this:
 
 
 To test the broadcasting capabilities, you will ***first need to launch Project3App2*** to ensure that it is running in the background while the broadcast is sent. Run the project, then head on over to Project3App1 and run that project. Chose whichever category you'd like (Food and Fun! automatically defaults on attractions), and Food and Fun! should receive the broadcasted intent and load with your chosen category. 
+
 You can then begin testing the Food and Fun!'s features, which include dynamically adding a fragment to showcase the selected list item's main website (on first click). If a menu item is already selected and you chose another, the website will change accordingly. Going back from this state will revert the application back to its original state (the single ListViewFragment showing different recommendations). You can also change the category on your own by pressing the options menu in the overflow area of the menu bar, which will then launch the activity corresponding to the chosen category. The app handles orientation changes flawlessly through configurations in the manifest file. 
 
 ## Project Requirements

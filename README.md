@@ -54,7 +54,7 @@ Project is created with:
 * Java SE Development Kit (JDK) 11.0.11
 
 ## Credits
-All credits for the project idea go to Professor Ugo Buy. Credits to some of the [AttractionsActivity.java](Project3App2/app/src/main/java/com/example/project3app2/AttractionsActivity.java),  [RestaurantsActivity.java](Project2App2/app/src/main/java/com/example/project3app2/RestaurantsActivity.java), [TitlesFragment.java](Project3App2/app/src/main/java/com/example/project3app2/TitlesFragment.java), and  [ListViewModel.java](Project3App2/app/src/main/java/com/example/project3app2/ListViewModel.java) codebase also go to Professor Ugo Buy as the beginning template for our project. 
+All credits for the project idea go to Professor Ugo Buy. Credits to some of the [AttractionsActivity.java](Project3App2/app/src/main/java/com/example/project3app2/AttractionsActivity.java),  [RestaurantsActivity.java](Project3App2/app/src/main/java/com/example/project3app2/RestaurantsActivity.java), [TitlesFragment.java](Project3App2/app/src/main/java/com/example/project3app2/TitlesFragment.java), and  [ListViewModel.java](Project3App2/app/src/main/java/com/example/project3app2/ListViewModel.java) codebase also go to Professor Ugo Buy as the beginning template for our project. 
 
 All credits to technologies used are given to their owners and all items specified in their respective licenses are adhered to throughout this project.  
 

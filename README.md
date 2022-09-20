@@ -1,5 +1,5 @@
-# Abels-Animals
-Android application displaying various attractions and restaurants in the Chicago area, and separate app that sends broadcasts to launch on default the chosen category. Creating using the Android flavor of Java. CS 478 Project 3, UIC Spring 2022.
+# Food and Fun!
+Android application displaying various hand-picked attractions and restaurants in the local Chicago area, and separate app which sends broadcasts to launch on default the chosen category in the main application. Creating using the Android flavor of Java. CS 478 Project 3, UIC Spring 2022.
 
 ## Table of contents
 * [General Info](#general-info)
@@ -16,7 +16,7 @@ Application 1 was required to define an activity containing two read-only text v
 Application 2 (Food and Fun!) was required to launch one of two activities. The first activity (attractions) displays information about 5 points of interest in the city of Chicago, Illinois (e.g., the Lincoln Park Zoo, Navy Pier, the Museum of Science and Indutry, the Art Institute, the TILT!, etc.) The second activity shows at least 5 restaurants located within Chicago’s city limits. Application 2 also maintains an options menu and an action bar. The action bar shows the name of the application (your choice) and the overflow area. The options menu allows a device user to switch between attractions and restaurants. This menu should be clearly accessible from the overflow area. Each of the two activities in Application 2 contains two fragments. The first fragment displays a list (either the attractions or the restaurants, depending on the activity). This list may be scrollable, as needed. The device user may select any item from either list; the currently selected item will stay highlighted until another item is selected. The second fragment shows the official web site of the highlighted item using a Webview.
 
 ### Other Requirements ###
-* Our apps were required display optimally in landscape mode. 
+* Both applications were required display optimally in landscape mode. 
 * The activities in Application 2 initially show only the first fragment across the entire width of the screen. 
     * As soon as a user selects an item, the first fragment is “shrunk” to about 1/3 of the screen’s width. This fragment will appear in the left-hand side of the screen, with the second fragment taking up the remaining 2/3 of the display on the right. 
     * Pressing the “back” button will return the activity to its initial configuration. 

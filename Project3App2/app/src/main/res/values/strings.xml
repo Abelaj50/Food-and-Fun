@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Project3App2</string>
+    <string-array name="AttractionArray">
+        <item>Lincoln Park Zoo</item>
+        <item>Navy Pier</item>
+        <item>Museum of Science and Industry</item>
+        <item>Art Institute of Chicago</item>
+        <item>TILT!</item>
+    </string-array>
+    <string-array name="AttractionWebsites">
+        <item>https://www.lpzoo.org/</item>
+        <item>https://navypier.org/</item>
+        <item>https://www.msichicago.org/</item>
+        <item>https://www.artic.edu/</item>
+        <item>https://360chicago.com/tilt</item>
+    </string-array>
+
+    <string-array name="RestaurantArray">
+        <item>Small Cheval</item>
+        <item>Ramen Wasabi</item>
+        <item>Bar Siena</item>
+        <item>The Hampton Social</item>
+        <item>Black Dog Gelato</item>
+    </string-array>
+    <string-array name="RestaurantWebsites">
+        <item>https://smallcheval.com/</item>
+        <item>https://www.wasabichicago.com/</item>
+        <item>https://www.barsiena.com/</item>
+        <item>https://www.thehamptonsocial.com/chicago-river-north</item>
+        <item>https://blackdoggelato.com/</item>
+    </string-array>
+
+
+</resources>

@@ -4,6 +4,7 @@ Android application displaying various hand-picked attractions and restaurants i
 ## Table of contents
 * [General Info](#general-info)
 * [Getting Started](#getting-started)
+* [Other Requirements](#other-requirements)
 * [Technologies](#technologies)
 * [Credits](#credits)
 * [Visual Demonstration](#visual-demonstration)
@@ -14,16 +15,6 @@ This project is the third project for CS 478 (Software Development for Mobile Pl
 **Application 1** was required to define an activity containing two read-only text views and two buttons. The buttons, when selected, will first show a short toast message, then broadcast two different implicity intents (e.g., attractions and restaurants) depending on the button pressed. The text views describe the meaning of the buttons to the device user. Application 2 was required to receive the intents. Depending on the kind of intent that was received, 
 
 **Application 2** (Food and Fun!) was required to launch one of two activities: the first activity (attractions) displays information about 5 points of interest in the city of Chicago, Illinois; the second activity shows at least 5 restaurants located within Chicago’s city limits. Application 2 also maintains an options menu and an action bar. The action bar shows the name of the application and the overflow area. The options menu allows a device user to switch between the two categories. Each of the two activities in Application 2 contains two fragments. The first fragment displays a list (either the attractions or the restaurants, depending on the activity). The device user may select any item from either list; the currently selected item will stay highlighted until another item is selected. The second fragment shows the official web site of the highlighted item using a Webview.
-
-### Other Requirements ###
-* Both applications were required display optimally in landscape mode. 
-* The activities in Application 2 initially show only the first fragment across the entire width of the screen. 
-    * As soon as a user selects an item, the first fragment is “shrunk” to about 1/3 of the screen’s width. This fragment will appear in the left-hand side of the screen, with the second fragment taking up the remaining 2/3 of the display on the right. 
-    * Pressing the “back” button will return the activity to its initial configuration. 
-* The action bar in Application 2 should be displayed at all times regardless of whether the device is in portrait or landscape mode.
-* The state of Applicaation 2 should be retained across device reconfigurations, e.g., when the device is switched from landscape to portrait mode and vice versa. 
-    * This means that the selected list item (in the first fragment) and the page displayed in the second fragment will be kept during configuration changes.
-* Using a ViewModel with LiveData for communication between fragments is required.
 
 ## Getting Started
 If you would like to download the app from the Google Play Store, click **here**. If you would like to browse through the source code in the environment it was created in, make sure you have **Android Studio 2021.1.1** installed.
@@ -46,6 +37,16 @@ A "long click" on any item in the grid (i.e. any animal thumbnail) within the fi
 * **"View Image"** will launch the second activity, which simply displays an enlarged version of the animal image.
 * **"Interesting Facts"** will launch the third activity, which displays interesting facts about that animal on the screen.
 * **"See Wikipedia Page"** starts an activity with an *ACTION_VIEW* intent, which should launch the device's default browser and open up that animal's Wikipedia page using a linked Uri. 
+
+## Other Requirements
+* Both applications were required display optimally in landscape mode. 
+* The activities in Application 2 initially show only the first fragment across the entire width of the screen. 
+    * As soon as a user selects an item, the first fragment is “shrunk” to about 1/3 of the screen’s width. This fragment will appear in the left-hand side of the screen, with the second fragment taking up the remaining 2/3 of the display on the right. 
+    * Pressing the “back” button will return the activity to its initial configuration. 
+* The action bar in Application 2 should be displayed at all times regardless of whether the device is in portrait or landscape mode.
+* The state of Applicaation 2 should be retained across device reconfigurations, e.g., when the device is switched from landscape to portrait mode and vice versa. 
+    * This means that the selected list item (in the first fragment) and the page displayed in the second fragment will be kept during configuration changes.
+* Using a ViewModel with LiveData for communication between fragments is required.
     
 ## Technologies
 Project is created with:

@@ -29,14 +29,7 @@ and Food and Fun! should look something like this:
 ![App 2 Start](images/app2start.png)
 
 
-The first activity of the application shows animal thumbnails in just two columns on the screen as to provide a lush, viewable image, as well as the animal name beneath, created using a couple different XML layouts (a main GridView and definition for each item in the GridView) and a customized version of BaseAdapter for control handling. Scrolling is enabled by default as not all animals are immediately viewed on the screen. The app handles orientation changes flawlessly through seperate landscape layout files. 
-
-Any single click on any item in the grid (i.e. any animal thumbnail) brings about the second activity, which is simply an enlarged version of the image. A click on this enlarged image will bring about the *third* activity, which displays interesting facts about that animal.  
-
-A "long click" on any item in the grid (i.e. any animal thumbnail) within the first activity shows a context menu with three options: 
-* **"View Image"** will launch the second activity, which simply displays an enlarged version of the animal image.
-* **"Interesting Facts"** will launch the third activity, which displays interesting facts about that animal on the screen.
-* **"See Wikipedia Page"** starts an activity with an *ACTION_VIEW* intent, which should launch the device's default browser and open up that animal's Wikipedia page using a linked Uri. 
+To test the broadcasting capabilities, you will need to *first launch Project3App2* to ensure that it is running in the background while the broadcast is sent. Run the project, then head on over to Project3App1 and run that project. Chose whichever category you'd like (Food and Fun! automatically defaults on attractions), and Food and Fun! should receive the broadcasted intent and load with your chosen category. You can then begin testing the applications features, which include dynamically adding a fragment to showcase the selected list item's main website (on first click). If a menu item is already selected and you chose another, the website will change accordingly. Going back from this state will revert the application back to its original state (the single ListViewFragment showing different recommendations). You can also change the category on your own by pressing the options menu in the overflow area of the menu bar, which will then launch the activity corresponding to the chosen category. The app handles orientation changes flawlessly through configurations in the manifest file. 
 
 ## Project Requirements
 **Application 1** was required to define an activity containing two read-only text views and two buttons. The buttons, when selected, will first show a short toast message, then broadcast two different implicity intents (e.g., attractions and restaurants) depending on the button pressed. The text views describe the meaning of the buttons to the device user. Application 2 was required to receive the intents. Depending on the kind of intent that was received, 
@@ -59,14 +52,7 @@ Project is created with:
 * Java SE Development Kit (JDK) 11.0.11
 
 ## Credits
-All credits for the project idea go to Professor Ugo Buy. Credits to much of the [GridLayoutActivity.java](app/src/main/java/com/example/project2/GridLayoutActivity.java) and [ImageAdapter.java](app/src/main/java/com/example/project2/ImageAdapter.java) codebase also go to Professor Ugo Buy as the beginning template for our project. Credits to [Pexels.com](https://www.pexels.com/) and the following contributors listed below for the images used throughout this project:
-* [Flickr](https://www.pexels.com/photo/tiger-beside-tree-145971/)
-* [Husain Chauhan](https://www.pexels.com/photo/silhouettes-of-unrecognizable-arabic-man-with-camel-at-sunset-4456133/) 
-* [Pixabay](https://www.pexels.com/photo/chimpanzee-sitting-on-gray-stone-in-closeup-photography-during-daytime-33787/)
-* [Pixabay](https://www.pexels.com/photo/brown-white-and-black-eagle-flying-nearby-pink-flower-field-158330/)
-* [antonytrivet](https://pixabay.com/images/id-5799523/)
-* [Valdemaras D.](https://www.pexels.com/photo/group-of-people-taking-picture-of-shark-1700656/)
-* [Sameera Madusanka](https://www.pexels.com/photo/macro-photography-of-green-crested-lizard-735174/)
+All credits for the project idea go to Professor Ugo Buy. Credits to some of the [AttractionsActivity.java](Project3App2/app/src/main/java/com/example/project3app2/AttractionsActivity.java),  [RestaurantsActivity.java](Project2App2/app/src/main/java/com/example/project3app2/RestaurantsActivity.java), [TitlesFragment.java](Project3App2/app/src/main/java/com/example/project3app2/TitlesFragment.java), and  [ListViewModel.java](Project3App2/app/src/main/java/com/example/project3app2/ListViewModel.java) codebase also go to Professor Ugo Buy as the beginning template for our project. 
 
 All credits to technologies used are given to their owners and all items specified in their respective licenses are adhered to throughout this project.  
 

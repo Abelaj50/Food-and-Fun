@@ -22,11 +22,11 @@ If you would like to download the app from the Google Play Store, click **here**
 
 Once you are ready, open the project(s) in Android Studio. If you want to simply explore Food and Fun!, open Project3App2. If you would like to view the broadcasting capabilities of the companion application, open both Project3App1 and Project3App2 (each in its own window). Ensure that the Run/Debug Configurations are set and set the device to a Pixel 3a XL using API 30. The broadcasting application should load up and look something like this:
 
-![App 1 Start](images/app1start.png)    ![App 2 Start](images/app2start.png)
+![App 1 Start](images/app1start.png)
 
 and Food and Fun! should look something like this:
 
-
+![App 2 Start](images/app2start.png)
 
 
 The first activity of the application shows animal thumbnails in just two columns on the screen as to provide a lush, viewable image, as well as the animal name beneath, created using a couple different XML layouts (a main GridView and definition for each item in the GridView) and a customized version of BaseAdapter for control handling. Scrolling is enabled by default as not all animals are immediately viewed on the screen. The app handles orientation changes flawlessly through seperate landscape layout files. 

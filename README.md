@@ -1,5 +1,5 @@
 # Food and Fun!
-Android application displaying various hand-picked attractions and restaurants in the local Chicago area, and separate app which sends broadcasts to launch on default the chosen category in the main application. Creating using the Android flavor of Java. CS 478 Project 3, UIC Spring 2022.
+Android application displaying various hand-picked attractions and restaurants in the local Chicago area, and separate application which sends broadcasts to launch on default the chosen category in the main application. Created using the Android flavor of Java. CS 478 Project 3, UIC Spring 2022.
 
 ## Table of contents
 * [General Info](#general-info)
